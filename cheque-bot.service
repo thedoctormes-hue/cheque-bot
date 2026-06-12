@@ -1,0 +1,36 @@
+[Unit]
+Description=Cheque Accounting Bot
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=www-data
+Group=www-data
+WorkingDirectory=/root/LabDoctorM/projects/cheque-bot
+ExecStart=/root/LabDoctorM/venv/bin/python main.py
+Restart=on-failure
+RestartSec=10
+StartLimitIntervalSec=300
+StartLimitBurst=5
+TimeoutStopSec=30
+KillSignal=SIGTERM
+
+# Безопасность
+NoNewPrivileges=yes
+ProtectSystem=strict
+ProtectHome=yes
+ReadWritePaths=/root/LabDoctorM/projects/cheque-bot /tmp /var/log
+PrivateTmp=yes
+
+# Ресурсы
+LimitNOFILE=65536
+MemoryMax=512M
+
+# Логирование
+StandardOutput=journal
+StandardError=journal
+SyslogIdentifier=cheque-bot
+
+[Install]
+WantedBy=multi-user.target
