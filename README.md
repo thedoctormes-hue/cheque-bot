@@ -1,5 +1,9 @@
 # Cheque-Bot 🧾
 
+> **Владелец:** DoctorM&Ai | **Статус:** active
+
+Telegram-бот для автоматизации бухгалтерии с AI-парсингом чеков.
+
 Telegram-бот для автоматизации бухгалтерии с AI-парсингом чеков.
 
 **Статус: ЗАМОРОЖЕН** (см. [TROUBLESHOOTING.md](TROUBLESHOOTING.md))
