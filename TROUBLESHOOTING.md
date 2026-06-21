@@ -18,17 +18,17 @@ systemctl status cheque-bot
 **Ожидаемый результат если заморожен:**
 ```
 ● cheque-bot.service - Cheque Accounting Bot
-     Loaded: loaded (/etc/systemd/system/cheque-bot.service; disabled)
-     Active: inactive (dead)
+ Loaded: loaded (/etc/systemd/system/cheque-bot.service; disabled)
+ Active: inactive (dead)
 ```
 
 **Ожидаемый результат если работает:**
 ```
 ● cheque-bot.service - Cheque Accounting Bot
-     Loaded: loaded (/etc/systemd/system/cheque-bot.service; enabled)
-     Active: active (running)
-   Main PID: <число>
-     Memory: XX.XM
+ Loaded: loaded (/etc/systemd/system/cheque-bot.service; enabled)
+ Active: active (running)
+ Main PID: <число>
+ Memory: XX.XM
 ```
 
 ### Шаг 2: Если не работает — проверить причину
@@ -58,7 +58,7 @@ curl -s https://api.telegram.org/bot<TOKEN>/getMe
 
 # Проверяем OpenRouter API
 curl -s https://openrouter.ai/api/v1/models \
-  -H "Authorization: Bearer $OPENROUTER_API_KEY"
+ -H "Authorization: Bearer $OPENROUTER_API_KEY"
 ```
 
 ### Шаг 3: Проверить логи
@@ -127,8 +127,8 @@ systemctl restart cheque-bot
 ### Проверка работоспособности
 
 ```bash
-systemctl is-active cheque-bot    # Должно вернуть: active
-systemctl is-enabled cheque-bot   # Должно вернуть: enabled
+systemctl is-active cheque-bot # Должно вернуть: active
+systemctl is-enabled cheque-bot # Должно вернуть: enabled
 ```
 
 ---
@@ -230,8 +230,8 @@ journalctl -u cheque-bot --no-pager -n 30
 ```bash
 # Проверить OpenRouter ключ
 curl -s https://openrouter.ai/api/v1/models \
-  -H "Authorization: Bearer $(grep OPENROUTER_API_KEY .env | cut -d= -f2)" \
-  | python3 -c "import sys,json; d=json.load(sys.stdin); print(f'Доступно моделей: {len(d[\"data\"])}')"
+ -H "Authorization: Bearer $(grep OPENROUTER_API_KEY .env | cut -d= -f2)" \
+ | python3 -c "import sys,json; d=json.load(sys.stdin); print(f'Доступно моделей: {len(d[\"data\"])}')"
 ```
 
 ---

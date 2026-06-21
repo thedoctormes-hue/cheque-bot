@@ -7,7 +7,6 @@
 | **Статус** | 🧊 frozen |
 | **Путь** | `/root/LabDoctorM/projects/cheque-bot` |
 | **Тип** | telegram-bot |
-| **Владелец** | zavlab |
 | **Приоритет** | low |
 | **Стек** | Python, Docker, aiogram |
 

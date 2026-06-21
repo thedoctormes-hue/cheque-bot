@@ -1,8 +1,8 @@
 ---
 name: Cheque Bot
+owner: DoctorM&Ai
 type: telegram-bot
 status: frozen
-owner: zavlab
 priority: low
 stack: [Python, Docker, aiogram]
 version: "0.1.0"
@@ -16,9 +16,6 @@ Telegram-бот для автоматизации бухгалтерии с AI-�
 
 ## Статус
 ЗАМОРОЖЕН
-
-## Владелец
-ЗавЛаб
 
 ## Структура
 - `main.py` — точка входа
