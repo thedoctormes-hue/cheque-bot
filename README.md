@@ -1,8 +1,16 @@
+---
+description: "cheque-bot — README"
+type: readme
+last_reviewed: 2026-06-21
+last_code_change: 2026-06-21
+status: active
+---
+
 # Cheque-Bot 🧾
 
 > **Владелец:** DoctorM&Ai | **Статус:** active
 
-Telegram-бот для автоматизации бухгалтерии с AI-парсингом чеков.
+## Описание
 
 Telegram-бот для автоматизации бухгалтерии с AI-парсингом чеков.
 
@@ -204,6 +212,12 @@ bash unfreeze.sh
 - Docker: non-root пользователь, resource limits, healthcheck
 - systemd: `NoNewPrivileges`, `ProtectSystem=strict`, `MemoryMax=512M`
 - Дедупликация чеков по `message_id`
+
+## Документация
+
+- [TROUBLESHOOTING.md](TROUBLESHOOTING.md)
+- [CHANGELOG](CHANGELOG.md)
+- [Тесты](tests/)
 
 ## Лицензия
 
