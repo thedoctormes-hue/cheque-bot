@@ -41,3 +41,61 @@ Thumbs.db
 
 # Node
 node_modules/
+*.pyc
+.next/
+.cache/
+.tox/
+.ruff_cache/
+.npm/
+.yarn/
+.pnp
+.pnp.js
+vendor/
+.tmp/
+temp/
+*~
+
+# === Build artifacts ===
+node_modules/
+dist/
+build/
+.next/
+out/
+
+# === Python ===
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+.pytest_cache/
+.ruff_cache/
+.tox/
+*.egg-info/
+
+# === IDE ===
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# === OS ===
+.DS_Store
+Thumbs.db
+
+# === Logs ===
+*.log
+
+# === Temp ===
+.cache/
+.tmp/
+tmp/
+
+# === Backup artifacts ===
+.backupignore
+
+# Secrets
+*.key
+*.pem
+*.p12
