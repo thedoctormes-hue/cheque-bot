@@ -1,3 +1,12 @@
+---
+description: "Cheque Bot — карточка проекта (индекс)"
+type: project-index
+id: proj-cheque-bot
+project_type: telegram-bot
+priority: low
+last_reviewed: 2026-07-14
+status: active
+---
 # Cheque Bot
 
 | Поле | Значение |
